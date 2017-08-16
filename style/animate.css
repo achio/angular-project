@@ -1,0 +1,50 @@
+.an-list{
+	color:red;
+	transition:0.5s linear all;
+}
+.an-list.ng-binding{
+	color: blue;
+}
+.an-box{
+	width: 100px;
+	height: 40px;
+	background-color: skyblue;
+	transition: all 2s;
+	-webkit-transition:width 2s;
+}
+.an-box:hover{
+	width: 200px;
+}
+.an-box.ng-hide{
+	opacity: 0;
+}
+.an-box.ng-hide-add,
+.an-box.ng-hide-remove {
+  transition: all linear 0.5s;
+}
+
+.an-list {
+  line-height:30px;
+  list-style:none;
+  box-sizing:border-box;
+}
+
+.an-list.ng-move,
+.an-list.ng-enter,
+.an-list.ng-leave {
+  transition:all linear 0.5s;
+}
+
+.an-list.ng-leave.ng-leave-active,
+.an-list.ng-move,
+.an-list.ng-enter {
+  opacity:0;
+  max-height:0;
+}
+
+.an-list.ng-leave,
+.an-list.ng-move.ng-move-active,
+.an-list.ng-enter.ng-enter-active {
+  opacity:1;
+  max-height:30px;
+}
